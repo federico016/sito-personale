@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCTO - Badi Federico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+      <header class="navbar">
+        <div class="navbar-brand">
+          <p>IIS MARCONI PIERALISI</p>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="biografia.html" class="nav-link">Biografia</a></li>
+          <li class="nav-item"><a href="umanistica.html" class="nav-link">Umanistica</a></li>
+          <li class="nav-item"><a href="professionalizzante.html" class="nav-link">Professionalizzante</a></li>
+          <li class="nav-item"><a href="educazioneCivica.html" class="nav-link">Educazione civica</a></li>
+          <li class="nav-item"><a href="pcto.html" class="nav-link active" aria-current="page">PCTO</a></li>
+        </ul>
+      </header>
+    </nav>
+    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('../img/pcto/pctoDef.jpg');">
+      <div class="hero-text">
+        <h1>Esperienza PCTO presso Loccioni</h1>
+        <p>Dall'apprendimento teorico alla pratica industriale</p>
+      </div>
+    </div>
+
+
+    <main>
+      <div class="container">
+        <section class="Introduction">
+          <h2>INTRODUZIONE</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <span>Durante la mia esperienza presso Loccioni, leader mondiale nei sistemi di misura di precisione e soluzioni di automazione industriale, sono stato accolto e immerso nel mondo aziendale. Ho partecipato a diversi giorni di formazione durante i quali sono stato introdotto all'azienda. Ho imparato a interpretare schemi, comprendere i sistemi di controllo e partecipare attivamente all'assemblaggio e al cablaggio del pannello di controllo.
+              </span>
+            </div>
+            <div class="media-content">
+              <img src="../img/pcto/polaris.jpg" 
+                  alt="Polaris Loccioni"
+                  class="responsive-media">
+            </div>
+          </div>
+        </section>
+        <section class="Ability">
+          <h2>ABILITA' E LAVORO DI SQUADRA</h2>
+          <div class="info-grid">
+            <div class="media-content">
+              <img src="../img/pcto/LoccioniXitis.png" 
+                  alt="rapporto con i tutor"
+                  class="responsive-media">
+            </div>
+            <div class="info-item">
+              <span>Durante la mia esperienza lavorativa presso Loccioni, ho partecipato attivamente a un progetto significativo focalizzato sul test di tenuta degli iniettori. In questo contesto, ho dimostrato la mia capacità di affrontare compiti complessi attraverso un pensiero critico e una notevole flessibilità intellettuale. Ho sempre dato priorità alla precisione in ogni aspetto del mio lavoro, gestendo con successo le mie responsabilità e rispettando le scadenze, anche quando lavoravo in autonomia. Inoltre, la collaborazione con il team ha potenziato le mie competenze comunicative, sia tecniche che relazionali, facilitando un'interazione chiara e trasparente tra tutti i membri del gruppo.
+              </span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>RAPPORTO CON I TUTOR</h2>
+          <div class="info-grid">
+            <div class="info-item">
+                Ho stabilito un rapporto eccezionale con i tutor aziendali: sono stati davvero utili nel chiarire le attività da svolgere e sempre puntuali nel fornire dettagli riguardanti le giornate di formazione o l'organizzazione delle giornate lavorative. Anche il tutor scolastico si è dimostrato disponibile e interessato alle attività svolte presso Loccioni.
+            </div>
+            <div class="media-content">
+              <img src="../img/pcto/rapportoTutor.avif" 
+                  alt="rapporto con i tutor"
+                  class="responsive-media">
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>ASPETTATIVE ED IMPATTO SUL FUTURO</h2>
+          <div class="info-grid">
+            <div class="media-content">
+              <img src="../img/pcto/aspettativeFuture.jpg" 
+                  alt="rapporto con i tutor"
+                  class="responsive-media">
+            </div>
+            <div class="info-item">
+              Alla fine del mio PCTO presso Loccioni, posso affermare con certezza che tutte le mie aspettative iniziali sono state pienamente soddisfatte. Questa esperienza avrà un impatto positivo sul mio futuro, permettendomi di esplorare nuovi argomenti non trattati durante le lezioni scolastiche e migliorare le mie competenze sociali, tra cui il lavoro di squadra e la costruzione di relazioni con i colleghi. Ha anche rivelato la mia capacità di adattarmi a nuove situazioni attraverso il ragionamento e le risorse disponibili. L'ambiente accogliente e di supporto presso Loccioni, con giornate di introduzione per i membri del team, ha reso la mia integrazione fluida.
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    
+    <div id="footer-container"></div>
+    
+    <script>
+      fetch('components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+</body>
+</html>

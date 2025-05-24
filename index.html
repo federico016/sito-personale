@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Badi Federico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+  <nav>
+    <header class="navbar">
+      <div class="navbar-brand">
+        <p>IIS MARCONI PIERALISI</p>
+      </div>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="html/biografia.html" class="nav-link">Biografia</a></li>
+        <li class="nav-item"><a href="html/umanistica.html" class="nav-link">Umanistica</a></li>
+        <li class="nav-item"><a href="html/professionalizzante.html" class="nav-link">Professionalizzante</a></li>
+        <li class="nav-item"><a href="html/educazioneCivica.html" class="nav-link">Educazione civica</a></li>
+        <li class="nav-item"><a href="html/pcto.html" class="nav-link">PCTO</a></li>
+      </ul>
+    </header>
+  </nav>
+
+  <main>
+    <!-- Inserisci carosello di immagini di tutti i progetti -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Benvenuto nel sito di Badi Federico</h1>
+        <p>Studente presso IIS Marconi Pieralisi</p>
+      </div>
+    </section>
+    
+    <!-- Sezione Quick Links -->
+    <section class="quick-links">
+      <h2>Esplora il mio percorso</h2>
+      <div class="quick-links-container">
+        <a href="html/biografia.html" class="quick-link">
+          <i class="fas fa-user"></i>
+          <span>Biografia</span>
+        </a>
+        <a href="html/umanistica.html" class="quick-link">
+          <i class="fas fa-book"></i>
+          <span>Umanistica</span>
+        </a>
+        <a href="html/professionalizzante.html" class="quick-link">
+          <i class="fas fa-laptop-code"></i>
+          <span>Professionalizzante</span>
+        </a>
+        <a href="html/educazioneCivica.html" class="quick-link">
+          <i class="fas fa-landmark"></i>
+          <span>Educazione Civica</span>
+        </a>
+        <a href="html/pcto.html" class="quick-link">
+          <i class="fas fa-briefcase"></i>
+          <span>PCTO</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+
+  <script>
+    fetch('html/components/footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading footer:', error);
+        document.getElementById('footer-container').innerHTML = '<footer><p>Footer non disponibile</p></footer>';
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educazione civica - Badi Federico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+      <header class="navbar">
+        <div class="navbar-brand">
+          <p>IIS MARCONI PIERALISI</p>
+        </div>
+        <ul class="nav">
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="biografia.html" class="nav-link">Biografia</a></li>
+          <li class="nav-item"><a href="umanistica.html" class="nav-link">Umanistica</a></li>
+          <li class="nav-item"><a href="professionalizzante.html" class="nav-link">Professionalizzante</a></li>
+          <li class="nav-item"><a href="educazioneCivica.html" class="nav-link active" aria-current="page">Educazione civica</a></li>
+          <li class="nav-item"><a href="pcto.html" class="nav-link">PCTO</a></li>
+        </ul>
+      </header>
+    </nav>
+</body>
+
+<main>
+
+</main>
+
+<div id="footer-container"></div>
+
+<script>
+  fetch('components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+</html>
